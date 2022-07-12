@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <meta charset = "UTF-8">
+  <link rel = "stylesheet" href="style.css">
+  <title> Dashboard </title>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.2.7-rc.0/web3.min.js"></script>
+
+</head>
+
+
+<body>
+  <header>
+    <h1>Dashboard</h1>
+  </header>
+
+
+  <div>
+    <h1> List of Accounts </h1>
+    <textarea style="height:200px; width:800px;"> <%= accountsDisplay %> </textarea>
+  </div>
+  <div>
+    <form action="/login" method="POST">
+      <fieldset>
+        <h3>Login to Account</h3>
+        <label>Username:</label>
+        <input type="text" id = "loginUsername" name="loginUsername"> </input>
+        <label>Current User Info:</label>
+        <textarea id = "currentUser" name="currentUser"> <%= userInfo %> </textarea>
+        <br><br>
+        <button type ="reset">Reset</button>
+        <button type ="submit">Submit</button>
+      </fieldset>
+    </form>
+  </div>
+
+  <div>
+  <form action="/createIdentity" method="POST">
+    <fieldset>
+      <h3>Create new identity</h3>
+      <label>Username:</label>
+      <input type="text" id = "newUsername" name="newUsername"> </input>
+      <label>Account:</label>
+      <input type="text" id = "newAccount" name="newAccount"> </input>
+      <br><br>
+      <button type ="reset">Reset</button>
+      <button type ="submit">Submit</button>
+    </fieldset>
+  </form>
+  <label>Keys</label>
+  <textarea id = "keys" name="keys" style="height:200px; width:800px;"> <%= identityDisplay %> </textarea>
+  </div>
+
+
+</body>
+</html>
