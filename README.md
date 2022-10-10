@@ -1,5 +1,8 @@
 # DegreeToken
 
+Utilizes PGP library for encryption and key generation in JS:
+https://github.com/openpgpjs/openpgpjs
+
 
 Proof of Concept:
 https://docs.google.com/presentation/d/14fCK_EAaxn40PRACXG4JQ4ySpsT-YoLCYrBc7i1doio/edit?usp=sharing
