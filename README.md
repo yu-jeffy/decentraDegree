@@ -1,6 +1,7 @@
 # DegreeToken
 
 • Ethereum Smart Contract for distribution of non-transferable ERC-721 tokens representing academic degrees.
+
 • Node.js web application serves React.js user interface and provides environment for off-chain PGP encryption.
 
 Utilizes PGP library for encryption and key generation in JS:
